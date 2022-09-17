@@ -1,0 +1,56 @@
+.cards-container{
+    @include centrado;
+    flex-wrap: wrap;
+}
+.cabecera{
+    @include centrado;
+    flex-direction: column;
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+    }
+}
+.container{
+    @include centrado;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.container-alert{
+    background-color: $morado;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    svg{
+        font-size: 3em;
+        color: white;
+    }
+}
+.modal{
+    width: 80%;
+    height: 300px;
+    @include centrado;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    margin: 0 auto;
+    background-color: $morado;
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    img{
+        width: 200px;
+    }
+    .close{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 30px;
+    }
+}

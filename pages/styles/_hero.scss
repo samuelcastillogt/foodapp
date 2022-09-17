@@ -1,0 +1,39 @@
+.hero{
+    background: -moz-linear-gradient(54deg, rgba(111,66,193,1) 0%, rgba(37,67,121,1) 100%);
+background: -webkit-linear-gradient(54deg, rgba(111,66,193,1) 0%, rgba(37,67,121,1) 100%);
+background: linear-gradient(54deg, rgba(111,66,193,1) 0%, rgba(37,67,121,1) 100%);
+    color: white;
+    font-family: 'League Gothic', sans-serif;
+    @include centrado;
+    justify-content: center;
+    height: 300px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    img{
+        
+    }
+    .hero-title{
+        font-size: 2em;
+        font-weight: bold;
+        margin: 10px;
+    }
+    .hero-text{
+        @include centrado;
+        flex-direction: column;
+        select{
+            padding: 5px;
+            border-radius: 10px;
+            font-size: 20px;
+            border: none;
+            margin: 10px;
+        }
+    }
+}
+@media screen and(max-width: 700px) {
+    .hero{
+        img{
+            max-width: 90%;
+        }
+    }
+}

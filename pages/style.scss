@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+$morado: #6f42c1;
+@mixin  centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    background-color: $morado;
+    color: white;
+    padding: 10px;
+    p{
+      font-size: 20px;
+    }
+ 
+    a{
+      text-decoration: none;  
+      color: white;
+    }
+}
+.blur{
+  filter: blur(10px);
+}
+footer{
+  background-color: $morado;
+  color: white;
+  padding: 20px;
+}
+.text-2xl{
+  font-size: 2em;
+}
+@import "./styles/hero";
+@import "./styles/card";
+@import "./styles/btn";
+@import "./styles/container";
+@import "./styles/mapa";

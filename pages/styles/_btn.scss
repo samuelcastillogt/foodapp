@@ -1,0 +1,12 @@
+.btn{
+    background-color: $morado;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-card{
+    width: 70%;
+    @include centrado;
+    margin: 0 auto;
+}
